@@ -2,7 +2,7 @@ package com.company;
 
 public class Main {
     static final long MIN = 0;
-    static final long MAX = 10_000_000;
+    static final long MAX = 1_000_000;
 
 
     static PrimesSequential primesSequential = new PrimesSequential();
@@ -23,7 +23,7 @@ public class Main {
           long start = System.nanoTime();
           long n = primesSequential.countPrimes(MIN, MAX);
           long finish = System.nanoTime();
-          System.out.println(n + " primes more than " + MIN + " primes less than " + MAX);
+          System.out.println(n + " primes between " + MIN + " and " + MAX);
           System.out.println("Time for Sequential approach : " + ((finish - start) / 1e9) + " sec.\n");
 
   }
@@ -32,7 +32,7 @@ public class Main {
           long start = System.nanoTime();
           long n = primesParallel.countPrimes(MIN, MAX);
           long finish = System.nanoTime();
-      System.out.println(n + " primes more than " + MIN + " primes less than " + MAX);
+      System.out.println(n + " primes between " + MIN + " and " + MAX);
           System.out.println("Time for Parallel approach: " + ((finish - start) / 1e9) + " sec.\n");
 
 
@@ -42,7 +42,7 @@ public class Main {
       long start = System.nanoTime();
       long n = primesStreamParallel.getPrimesStream(MIN, MAX);
       long finish = System.nanoTime();
-      System.out.println(n + " primes more than " + MIN + " primes less than " + MAX);
+      System.out.println(n + " primes between " + MIN + " and " + MAX);
       System.out.println("Time for Parallel Stream approach : " + ((finish - start) / 1e9) + " sec.\n");
   }
 }
