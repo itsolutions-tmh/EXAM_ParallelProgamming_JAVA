@@ -4,6 +4,8 @@
     <list default="true" id="8c138564-da74-4c11-ae9c-42675f82ab1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PrimesParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PrimesParallel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PrimesStreamParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PrimesStreamParallel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +18,7 @@
       <list>
         <option value="TypeScript File" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -26,7 +29,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BookStore" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunDashboard">
@@ -70,6 +74,9 @@
       <updated>1571837029055</updated>
       <workItem from="1571837034288" duration="21651000" />
       <workItem from="1571998936192" duration="5488000" />
+      <workItem from="1574151033309" duration="2013000" />
+      <workItem from="1576138211972" duration="2272000" />
+      <workItem from="1576142470226" duration="1833000" />
     </task>
     <servers />
   </component>
@@ -81,7 +88,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

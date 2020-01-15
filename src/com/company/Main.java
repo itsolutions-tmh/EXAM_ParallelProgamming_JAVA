@@ -2,7 +2,7 @@ package com.company;
 
 public class Main {
     static final long MIN = 0;
-    static final long MAX = 1_000_000;
+    static final long MAX = 2_000_000;
 
 
     static PrimesSequential primesSequential = new PrimesSequential();

@@ -20,19 +20,17 @@ public class PrimesParallel extends RecursiveTask<Long> {
     @Override
     protected Long compute() {
         long count = 0;
-
-        if (end - start <= 250) {
+        if (end - start <= 25_000) {
             for (long i = start; i < end; i++) {
                 if (isPrime(i)) count += 1;
             }
         } else {
-
             long divider = ((end - start) / 2) + start;
             PrimesParallel small = new PrimesParallel(start, divider);
             PrimesParallel large = new PrimesParallel(divider, end);
-            large.fork();
-            count += small.compute();
-            count += large.join();
+            large.fork(); //start the large piece running in parallel
+            count += small.compute(); //start the small piece directly
+            count += large.join(); //wait for the large piece to finish
         }
         return count;
     }

@@ -6,7 +6,10 @@ public class PrimesStreamParallel {
 
     public long getPrimesStream(long min, long max) {
 
-        return LongStream.rangeClosed(min, max).parallel().filter(x -> isPrime(x)).count();
+        return LongStream.rangeClosed(min, max)
+                .parallel()
+                .filter(x -> isPrime(x))
+                .count();
     }
 
     private boolean isPrime(long n) {
